@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Disney+ Scrapper</title>
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body>
+    <style>
+      body {
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('static/disney.png');
+      }
+      </style>
+    {% block content %}
+    <div>
+      <div class="navbar">
+        <nav>
+          <ul id='MenuItems'>
+              <li><a href="{{ url_for('home')}}"'>Home</a></li>
+          </ul>
+      </nav>
+      </div>
+      <div class="text1">
+        <a class="text">Sorry! This show is not on Disney+!</a>
+      </div>
+    </div>
+    <div class="image">
+      <nav>
+        <img src="static/error.jpg" alt="Kayleen" class="image">
+    </nav>
+    </div>
+    {% endblock %}
+  </body>
+</html>

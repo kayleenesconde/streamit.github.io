@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/results.css">
+    <title>StreamIt - Amazon Prime Video</title>
+</head>
+<body>
+    <style>
+        body {
+          background-image:url('static/movie.jpg.png');
+        }
+        </style>
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src="static/streamlogo.png" alt="StreamIt Logo">
+            <a href="{{ url_for('home')}}" class="btn btn-rounded">Home</a>
+        </div>
+        <div class="showcase-content">
+            <form class="form-box" action="click" method="POST">
+                <h2>Results have been found.</h2>
+                <img src="static/apicon.png">
+                <p class="p">TITLE, YEAR RELEASED, AGE APPROPRIATE, IMBD RATING, STREAMING SITE</p>
+                <a href="https://www.primevideo.com/" class="list"> {{showname}} , {{showyear}} , {{showage}}, {{showimbd}}, {{showloc}}</a>
+            </form>
+        </div>
+    </header>
+    <footer class="footer">
+        <p>Created for school purposes only.</p>
+    </footer>
+</body>
+</html>

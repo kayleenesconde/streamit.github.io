@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style1.css">
+    <title>StreamIt - Watch T.V. Shows Online</title>
+</head>
+<body>
+    <style>
+        body {
+          background-image:url('static/movie.jpg.png');
+        }
+        </style>
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src="static/streamlogo.png" alt="Netflix Logo">
+            <a href="{{ url_for('aboutus')}}" class="btn btn-rounded">About</a>
+        </div>
+        <div class="showcase-content" >
+            <form action="click" method="POST">
+                <h1>Welcome to StreamIt.</h1>
+                <h3>Find any T.V. Show on Netflix, Hulu, Disney+, and Amazon Prime</h3>
+                <p>Ready to watch? Enter a T.V. Show.</p>
+                <input type="text" name="dshow" id="mail" placeholder="T.V. Show" >
+                <input class="btn btn-lg" type="submit" value="SEARCH">
+            </form>
+        </div>
+    </header>
+
+    <section class="style-cards">
+        <div class="card-3">
+            <div class="desc-0">
+                <h1>Search any show you'd like.</h1>
+                <h3>With a click of a button, you'll be directed to where you can watch the show.</h3>
+            </div>
+            <img src="static/tvv.png" alt="Netflix TV">
+            <video class="video-0" autoplay="" playsinline="" muted="" loop=""><source src="static/loki.mp4" type="video/mp4"></video>
+        </div>
+        <div class="card-3">
+            <div class="desc-1">
+                <h1>Enjoy on your TV.</h1>
+                <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more with Netflix, Disney+, Hulu, and Amazon Prime.</h3>
+            </div>
+            <img src="static/tvv.png" alt="Netflix TV">
+            <video class="video-0" autoplay="" playsinline="" muted="" loop=""><source src="static/bridgerton.mp4" type="video/mp4"></video>
+        </div>
+        <div class="card-3">
+            <div class="desc-3">
+                <h1>Be able to watch anything.</h1>
+                <h3>Be able to unlimitely stream.</h3>
+            </div>
+            <img src="static/tvv.png" alt="Device-Pile-In">
+            <video class="video-2" autoplay="" playsinline="" muted="" loop=""><source src="static/hsm.mp4" type="video/mp4"></video>
+        </div>
+    </section>
+
+    <section class="lastsec">
+        <div class="faq">
+            <h1>Frequently Asked Questions</h1>
+            <ul class="questions">
+                <li>What is StreamIt?</li>
+                <li>Where can I watch?</li>
+                <li>What can I watch?</li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Created for school purposes only.</p>
+    </footer>
+</body>
+</html>

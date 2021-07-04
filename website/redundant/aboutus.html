@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Creators</title>
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body>
+    <style>
+      body {
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('static/movie.png');
+      }
+      </style>
+    {% block content %}
+    <div>
+      <div class="navbar">
+        <div>
+          <a>Who Are the Creators?</a>
+        </div>
+        <nav>
+          <ul id='MenuItems'>
+              <li><a href="{{ url_for('home')}}"'>Home</a></li>
+          </ul>
+      </nav>
+      </div>
+      <div class="text1">
+        <a class="text">Ivan Joshua Bascuguin</a>
+      </div>
+    </div>
+    <div class="image">
+      <nav>
+        <img src="static/ivan.jpg" alt="Kayleen" class="image">
+    </nav>
+    </div>
+    <div class="text">
+      <a class="text">Kayleen Ashly M. Esconde</a>
+    </div>
+    <div class="image">
+      <nav>
+          <img src="static/kayleen.jpg" alt="Kayleen" class="image">
+      </nav>
+    </div>
+    <div class="text2">
+      <a class="text">Wendell A. Anorma</a>
+    </div>
+    <div class="image">
+      <nav>
+          <img src="static/bubba.jpg" alt="Wendell" class="image">
+      </nav>
+    </div>
+    {% endblock %}
+  </body>
+</html>
